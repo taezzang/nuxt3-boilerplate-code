@@ -1,7 +1,6 @@
-<template>
+<template lang="">
     <div>
-        <h1>Root Page</h1>
-        <TestComp />
+        <h1>Test Page</h1>
     </div>
 </template>
 <script>
