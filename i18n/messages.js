@@ -1,7 +1,7 @@
-import kr from './kr';
+import ko from './ko';
 import en from './en';
 
 export default {
-    kr,
+    ko,
     en,
 };
