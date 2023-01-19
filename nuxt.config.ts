@@ -3,15 +3,16 @@ import messages from './i18n/messages';
 export default defineNuxtConfig({
     modules: ['@nuxtjs/i18n'],
     i18n: {
-        // strategy: 'no_prefix',
+        // strategy: 'no_prefix', // 해당 옵션 활성화 시 root 도메인 바로 앞에 /ko 또는, /en 형식으로 locale이 따라 붙지 않음
         detectBrowserLanguage: {
             useCookie: true,
             cookieKey: 'i18n_redirected',
             redirectOn: 'root', // recommended
         },
+        defaultLocale: 'ko', // default locale of your project for Nuxt pages and routings
         locales: [
             {
-                code: 'kr',
+                code: 'ko',
                 name: 'Korean',
             },
             {
@@ -19,10 +20,9 @@ export default defineNuxtConfig({
                 name: 'English',
             },
         ], // used in URL path prefix
-        // defaultLocale: 'kr', // default locale of your project for Nuxt pages and routings
+
         vueI18n: {
-            legacy: false,
-            locale: 'kr',
+            fallbackLocale: 'en',
             messages,
         },
     },
