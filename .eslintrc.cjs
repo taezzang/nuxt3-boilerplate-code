@@ -34,11 +34,14 @@ module.exports = {
         ],
         'import/extensions': [
             // 일관성 있는 Import Path를 위한 설정
-            // Airbnb lint rule엔 ts가 빠져있어 ts 확장자에 대한 설정 추가
+            // Airbnb lint rule엔 ts가 빠져있어 ts 확장자에 대한 설정까지 추가하여 덮어쓰기
             'error',
             'ignorePackages',
             {
+                js: 'never',
                 ts: 'never',
+                mjs: 'never',
+                jsx: 'never',
             },
         ],
         'prettier/prettier': [
