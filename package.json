@@ -1,5 +1,5 @@
 {
-  "name" : "nuxt3-boilerplate",
+  "name": "nuxt3-boilerplate",
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -19,5 +19,9 @@
     "nuxt": "^3.0.0",
     "prettier": "^2.8.3",
     "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.6",
+    "pinia": "^2.0.29"
   }
 }
