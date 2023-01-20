@@ -27,6 +27,20 @@ module.exports = {
         'no-undef': 'off',
         'no-unused-vars': 'off',
         'vue/multi-word-component-names': 'off',
+        'import/prefer-default-export': [
+            // 모듈 export 시 파일 내 하나의 모듈만 존재할 경우 export default 문을 붙이도록 하는 옵션
+            'off', // 나중에 모듈 수정 시 불편할 것 같아 비활성화 처리
+            { target: 'single' }, // default is "single"
+        ],
+        'import/extensions': [
+            // 일관성 있는 Import Path를 위한 설정
+            // Airbnb lint rule엔 ts가 빠져있어 ts 확장자에 대한 설정 추가
+            'error',
+            'ignorePackages',
+            {
+                ts: 'never',
+            },
+        ],
         'prettier/prettier': [
             'error',
             {
