@@ -23,6 +23,7 @@
   "dependencies": {
     "@nuxtjs/robots": "^3.0.0",
     "@pinia/nuxt": "^0.4.6",
+    "nuxt-simple-sitemap": "^1.0.2",
     "pinia": "^2.0.29"
   }
 }
