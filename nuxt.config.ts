@@ -1,7 +1,7 @@
 import messages from './i18n/messages';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    modules: ['@nuxtjs/i18n', '@pinia/nuxt'],
+    modules: ['@nuxtjs/i18n', '@pinia/nuxt', ['@nuxtjs/robots', { configPath: './robots.config' }]],
     i18n: {
         // strategy: 'no_prefix', // 해당 옵션 활성화 시 root 도메인 바로 앞에 /ko 또는, /en 형식으로 locale이 따라 붙지 않음
         detectBrowserLanguage: {

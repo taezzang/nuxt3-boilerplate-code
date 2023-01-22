@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@nuxtjs/i18n': 8.0.0-beta.7
+  '@nuxtjs/robots': ^3.0.0
   '@pinia/nuxt': ^0.4.6
   eslint: ^8.32.0
   eslint-config-airbnb: ^19.0.4
@@ -15,6 +16,7 @@ specifiers:
   typescript: ^4.9.4
 
 dependencies:
+  '@nuxtjs/robots': 3.0.0_rollup@2.79.1
   '@pinia/nuxt': 0.4.6_rnb65zy77kx66qnsvrpa2qz65q
   pinia: 2.0.29_prq2uz4lho2pwp6irk4cfkrxwu
 
@@ -789,6 +791,16 @@ packages:
       - vue-i18n-bridge
       - vue-router
     dev: true
+
+  /@nuxtjs/robots/3.0.0_rollup@2.79.1:
+    resolution: {integrity: sha512-qsHGW1KXBvV5Kq7u3huPnFCUTbHS4Fk8Za2mNPgmUXcwLgp3exvhPtdZfIdjrCF/aZk3A8OZONNmGghs6CecBA==}
+    dependencies:
+      '@nuxt/kit': 3.0.0_rollup@2.79.1
+      h3: 1.0.2
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+    dev: false
 
   /@pinia/nuxt/0.4.6_rnb65zy77kx66qnsvrpa2qz65q:
     resolution: {integrity: sha512-HjrYEfLdFpmsjhicPJgL36jVhzHWukIQPFFHGTSF84Cplu+f2nY2XHKqe9ToHzE9rLee2RjLOwAzOnXa/I/u6A==}
@@ -1703,7 +1715,6 @@ packages:
 
   /cookie-es/0.5.0:
     resolution: {integrity: sha512-RyZrFi6PNpBFbIaQjXDlFIhFVqV42QeKSZX1yQIl6ihImq6vcHNGMtqQ/QzY3RMPuYSkvsRwtnt5M9NeYxKt0g==}
-    dev: true
 
   /core-util-is/1.0.3:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
@@ -3156,7 +3167,6 @@ packages:
       destr: 1.2.2
       radix3: 1.0.0
       ufo: 1.0.1
-    dev: true
 
   /has-bigints/1.0.2:
     resolution: {integrity: sha512-tSvCKtBr9lkF0Ex0aQiP9N+OpV4zi2r/Nee5VkRDbaqv35RLYMzbwQfFSZZH0kR+Rd6302UJZ2p/bJCEoR3VoQ==}
@@ -4879,7 +4889,6 @@ packages:
 
   /radix3/1.0.0:
     resolution: {integrity: sha512-6n3AEXth91ASapMVKiEh2wrbFJmI+NBilrWE0AbiGgfm0xet0QXC8+a3K19r1UVYjUjctUgB053c3V/J6V0kCQ==}
-    dev: true
 
   /randombytes/2.1.0:
     resolution: {integrity: sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ==}
