@@ -6,7 +6,17 @@ export default defineNuxtConfig({
         '@pinia/nuxt',
         ['@nuxtjs/robots', { configPath: './robots.config' }],
         'nuxt-simple-sitemap',
+        '@pinia-plugin-persistedstate/nuxt', // https://prazdevs.github.io/pinia-plugin-persistedstate/frameworks/nuxt-3.html
     ],
+    // https://greeng00se.tistory.com/110
+    // 쿠키를 사용하도록 설정도 가능
+    // SSR 사용, 또는 만료 시간 설정하고싶은 경우 다음과 같이 설정
+    piniaPersistedstate: {
+        cookieOptions: {
+            maxAge: 3600,
+            sameSite: 'strict',
+        },
+    },
     // https://nuxt.com/modules/simple-sitemap
     sitemap: {
         // sitemap.xml 생성 시 사이트 호스트를 제공해야함
