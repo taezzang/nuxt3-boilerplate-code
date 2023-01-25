@@ -21,7 +21,9 @@ interface Ip {
 
 // ip 조회하는 OpenAPI로 Nuxt에서 제공하는 Data Fetch 모듈 활용
 // vue life cycle이 실행 되기 전에 미리 api호출하여 값을 가져온다
-const { data, pending, error, refresh } = useAsyncData<Ip>('myIp', () => $fetch('https://api.ipify.org/?format=json'));
+// const { data, pending, error, refresh } = useAsyncData<Ip>('myIp', () => $fetch('https://api.ipify.org/?format=json'));
+const { data, pending, error, refresh } = useFetch<Ip>('/api/myIp');
+console.log(data.value);
 // or
 const { data: data2 } = await useFetch<Ip>('https://api.ipify.org/?format=json');
 </script>
