@@ -7,12 +7,18 @@ module.exports = {
         es2021: true,
     },
     // airbnb의 JS 스타일 가이드를 따른다
-    extends: ['eslint:recommended', 'plugin:vue/vue3-essential', 'airbnb', 'prettier'],
+    extends: [
+        'eslint:recommended',
+        'plugin:vue/vue3-essential',
+        '@nuxtjs/eslint-config-typescript',
+        'airbnb',
+        'prettier',
+    ],
     plugins: ['prettier'],
-    parserOptions: {
-        // 타입스크립트 프로젝트에서 tsconfig 내용을 eslint가 알아먹게끔 하기
-        project: './tsconfig.json',
-    },
+    // parserOptions: {
+    //     // 타입스크립트 프로젝트에서 tsconfig 내용을 eslint가 알아먹게끔 하기
+    //     project: './tsconfig.json',
+    // },
     // https://chinsun9.github.io/2021/08/29/tsconfig-baseUrl-eslint/
     // https://github.com/import-js/eslint-plugin-import/issues/1485#issuecomment-535351922
     settings: {
@@ -26,6 +32,7 @@ module.exports = {
         'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
         'no-undef': 'off',
         'no-unused-vars': 'off',
+        '@typescript-eslint/no-unused-vars': 'off',
         'vue/multi-word-component-names': 'off',
         'import/prefer-default-export': [
             // 모듈 export 시 파일 내 하나의 모듈만 존재할 경우 export default 문을 붙이도록 하는 옵션
