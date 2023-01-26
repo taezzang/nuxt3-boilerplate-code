@@ -1,6 +1,15 @@
 import messages from './i18n/messages';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    vite: {
+        css: {
+            preprocessorOptions: {
+                scss: {
+                    additionalData: '@use "@/assets/css/global.scss" as *;',
+                },
+            },
+        },
+    },
     css: ['@/assets/css/reset.css'],
     modules: [
         '@nuxtjs/i18n',
