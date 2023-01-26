@@ -1,6 +1,7 @@
 import messages from './i18n/messages';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    css: ['@/assets/css/reset.css'],
     modules: [
         '@nuxtjs/i18n',
         '@pinia/nuxt',
