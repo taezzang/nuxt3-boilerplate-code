@@ -1,22 +1,24 @@
 <template>
-    <div>
-        <template v-if="!pending"
-            ><h1>Root Page</h1>
-            <TestComp />
-            <div>
-                <h2>Counter</h2>
-                <button @click="counterStore.increment()">Increase</button>
-                <input v-model="counterStore.count" type="number" />
-            </div>
-            <h3>현재 아이피 : {{ data?.ip }}</h3>
-            <h3>현재 아이피2 : {{ data2?.ip }}</h3>
+    <div class="section">
+        <div class="section__wrap">
+            <template v-if="!pending"
+                ><h1>Root Page</h1>
+                <TestComp />
+                <div>
+                    <h2>Counter</h2>
+                    <button @click="counterStore.increment()">Increase</button>
+                    <input v-model="counterStore.count" type="number" />
+                </div>
+                <h3>현재 아이피 : {{ data?.ip }}</h3>
+                <h3>현재 아이피2 : {{ data2?.ip }}</h3>
 
-            <button @click="refreshAPI">Async 재호출</button>
-            <button @click="refreshAPI2">useFetch 재호출</button>
-        </template>
-        <template v-else>
-            <h3>로딩중임</h3>
-        </template>
+                <button @click="refreshAPI">Async 재호출</button>
+                <button @click="refreshAPI2">useFetch 재호출</button>
+            </template>
+            <template v-else>
+                <h3>로딩중임</h3>
+            </template>
+        </div>
     </div>
 </template>
 <script setup lang="ts">
@@ -46,4 +48,13 @@ const refreshAPI2 = () => {
     refresh2();
 };
 </script>
-<style lang="scss"></style>
+<style lang="scss" scoped>
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // &__wrap {
+    //     width: 70%;
+    // }
+}
+</style>
