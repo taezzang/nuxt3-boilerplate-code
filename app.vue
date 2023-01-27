@@ -13,4 +13,12 @@ body {
         @include fullSize;
     }
 }
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // &__wrap {
+    //     width: 70%;
+    // }
+}
 </style>
