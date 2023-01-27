@@ -71,6 +71,9 @@ export default defineNuxtConfig({
         head: {
             charset: 'utf-8',
             title: 'Nuxt BoilerPlate',
+            htmlAttrs: {
+                lang: 'ko',
+            },
             meta: [
                 // <meta name="description" content="My amazing site">
                 { name: 'description', content: 'This i s Nuxt3 BolierPlate' },
