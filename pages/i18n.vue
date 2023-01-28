@@ -7,7 +7,7 @@
         }}</NuxtLink>
     </div>
 </template>
-<script setup>
+<script setup lang="ts">
 const { t, locale, locales } = useI18n();
 const switchLocalePath = useSwitchLocalePath();
 const availableLocales = computed(() => locales.value.filter((i) => i.code !== locale.value));
