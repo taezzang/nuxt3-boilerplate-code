@@ -44,6 +44,7 @@ export default defineNuxtConfig({
         },
     },
     i18n: {
+        baseUrl: 'http://localhost:3000', // 대체 URL을 정규화하려면 프로덕션 도메인에 baseUrl 옵션을 설정해야 함
         // strategy: 'no_prefix', // 해당 옵션 활성화 시 root 도메인 바로 앞에 /ko 또는, /en 형식으로 locale이 따라 붙지 않음
         detectBrowserLanguage: {
             useCookie: true,
@@ -55,10 +56,12 @@ export default defineNuxtConfig({
             {
                 code: 'ko',
                 name: 'Korean',
+                iso: 'ko-KR', // html lang attribute에 적용시키는 옵션
             },
             {
                 code: 'en',
                 name: 'English',
+                iso: 'en-US', // html lang attribute에 적용시키는 옵션
             },
         ], // used in URL path prefix
 
