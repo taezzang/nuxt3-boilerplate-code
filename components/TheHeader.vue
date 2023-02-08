@@ -1,6 +1,6 @@
 <template>
     <header>
-        <img src="@/assets/images/logo.png" alt="logo" />
+        <img src="~/assets/images/logo.png" alt="logo" />
         <ul class="links">
             <li class="link"><nuxt-link to="/">Home</nuxt-link></li>
             <li class="link"><nuxt-link to="/sub">Sub Page</nuxt-link></li>
