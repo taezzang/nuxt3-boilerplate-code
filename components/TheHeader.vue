@@ -7,6 +7,7 @@
             <li class="link"><nuxt-link to="/store">Store Example</nuxt-link></li>
             <li class="link"><nuxt-link to="/i18n">I18n Example</nuxt-link></li>
             <li class="link"><nuxt-link to="/fetch">Data Fetch Example</nuxt-link></li>
+            <li class="link"><nuxt-link to="/image">Image import Example</nuxt-link></li>
         </ul>
     </header>
 </template>
@@ -26,7 +27,7 @@ header {
     }
 
     .links {
-        width: 50%;
+        width: 70%;
         height: 100%;
         display: flex;
         justify-content: space-around;
