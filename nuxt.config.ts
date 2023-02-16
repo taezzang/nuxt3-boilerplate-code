@@ -10,6 +10,13 @@ export default defineNuxtConfig({
             },
         },
     },
+    // dotEnv 라이브러리를 다운받을 필요 없이 이미 Nuxt 3 안에 내장이 되어있기 때문에 .env 파일 사용 or config 파일 내 runtimeConfig을 통해 설정이 가능함
+    runtimeConfig: {
+        apiSecret: '', // NUXT_API_SECRET <- 동일  Server Side 에서만 유효함
+        public: {
+            apiBase: '/test/base', // NUXT_PUBLIC_API_BASE <- 동일  Client Side에서도 사용 가능
+        },
+    },
     css: ['@/assets/css/reset.css'],
     modules: [
         '@nuxtjs/i18n',
