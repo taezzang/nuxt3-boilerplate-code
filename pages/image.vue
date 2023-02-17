@@ -9,8 +9,8 @@
 
         <br />
         <h2>background-image css 프로퍼티 사용 시</h2>
-        <p>1. 이미지를 import 함으로써 해당 이미지에 대한 URL 값을 받아오기</p>
-        <div class="box" :style="{ backgroundImage: `url('${bg}')` }"></div>
+        <p>1. 이미지를 import 함으로써 해당 이미지에 대한 URL 값을 받아와 style 디렉티브로 표현</p>
+        <div class="box" :style="{ backgroundImage: `url('${bg}')`, backgroundSize: 'contain' }"></div>
         <br />
         <p>2. class에 미리 background-image 속성을 정의한 뒤 적용할 엘리먼트에 클래스 부여</p>
         <div class="box bg-image"></div>
@@ -29,5 +29,6 @@ import bg from '@/assets/images/logo.png';
 
 .bg-image {
     background-image: url(~/assets/images/logo.png);
+    background-size: contain;
 }
 </style>
