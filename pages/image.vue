@@ -19,6 +19,7 @@
 </template>
 <script setup lang="ts">
 import bg from '@/assets/images/logo.png';
+// const bg = new URL('@/assets/images/logo.png');
 </script>
 
 <style scoped>
