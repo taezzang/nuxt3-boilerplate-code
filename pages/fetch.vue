@@ -14,6 +14,10 @@
     </div>
 </template>
 <script setup lang="ts">
+interface Ip {
+    ip: string;
+}
+
 // ip 조회하는 OpenAPI로 Nuxt에서 제공하는 Data Fetch 모듈 활용
 // vue life cycle이 실행 되기 전에 미리 api호출하여 값을 가져온다
 // useAsyncData 메소드는 page-level 컴포넌트에서만 사용가능
