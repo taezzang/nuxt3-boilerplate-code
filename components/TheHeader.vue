@@ -8,6 +8,10 @@
             <li class="link"><nuxt-link to="/i18n">I18n Example</nuxt-link></li>
             <li class="link"><nuxt-link to="/fetch">Data Fetch Example</nuxt-link></li>
             <li class="link"><nuxt-link to="/image">Image import Example</nuxt-link></li>
+            <div>
+                <nuxt-link to="/children/Alpha">Alpha</nuxt-link><br /><nuxt-link to="/children/Bravo">Bravo</nuxt-link
+                ><br /><nuxt-link to="/children/Charlie">Charlie</nuxt-link>
+            </div>
         </ul>
     </header>
 </template>
