@@ -8,19 +8,19 @@ module.exports = {
     },
     // airbnb의 JS 스타일 가이드를 따른다
     extends: [
-        'eslint:recommended',
+        'plugin:@typescript-eslint/recommended',
+        // 'eslint:recommended',
         'plugin:vue/vue3-essential',
         '@nuxtjs/eslint-config-typescript',
         'airbnb',
         'prettier',
+        '@vue/typescript',
     ],
-    plugins: ['prettier'],
-    // parserOptions: {
-    //     // 타입스크립트 프로젝트에서 tsconfig 내용을 eslint가 알아먹게끔 하기
-    //     project: './tsconfig.json',
-    // },
-    // https://chinsun9.github.io/2021/08/29/tsconfig-baseUrl-eslint/
-    // https://github.com/import-js/eslint-plugin-import/issues/1485#issuecomment-535351922
+    parser: 'vue-eslint-parser',
+    parserOptions: {
+        parser: '@typescript-eslint/parser',
+    },
+    plugins: ['@typescript-eslint', 'prettier'],
     settings: {
         // eslint-import-resolver-typescript는 tsconfig에서 path alias를 사용할 수 있도록 해주는 패키지다
         'import/resolver': {
