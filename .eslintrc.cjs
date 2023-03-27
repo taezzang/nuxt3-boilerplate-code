@@ -9,16 +9,18 @@ module.exports = {
     // airbnb의 JS 스타일 가이드를 따른다
     extends: [
         'plugin:@typescript-eslint/recommended',
-        // 'eslint:recommended',
         'plugin:vue/vue3-essential',
         '@nuxtjs/eslint-config-typescript',
         'airbnb',
         'prettier',
-        '@vue/typescript',
     ],
     parser: 'vue-eslint-parser',
     parserOptions: {
+        ecmaVersion: 'latest',
         parser: '@typescript-eslint/parser',
+        ecmaFeatures: {
+            jsx: false,
+        },
     },
     plugins: ['@typescript-eslint', 'prettier'],
     settings: {
