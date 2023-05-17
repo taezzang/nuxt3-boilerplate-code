@@ -71,11 +71,6 @@ export default defineNuxtConfig({
                 iso: 'en-US', // html lang attribute에 적용시키는 옵션
             },
         ], // used in URL path prefix
-
-        vueI18n: {
-            fallbackLocale: 'en',
-            messages,
-        },
     },
     app: {
         head: {
