@@ -2,6 +2,11 @@
   // https://nuxt.com/docs/guide/concepts/typescript
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
-      "typeRoots": ["types"]
+      "strict": true,
+      "strictNullChecks": false,
+      "typeRoots": ["types"],
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
   },
 }
+

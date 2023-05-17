@@ -34,9 +34,14 @@ module.exports = {
         'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
         'no-undef': 'off',
         'no-unused-vars': 'off',
+        'no-alert': 'off',
+        'no-use-before-define': 'off',
         '@typescript-eslint/no-unused-vars': 'off',
+        'vue/no-v-html': 'off',
         'vue/multi-word-component-names': 'off',
         'vue/no-multiple-template-root': 'off',
+        'prefer-const': 'off',
+        'no-restricted-syntax': 'off',
         'import/prefer-default-export': [
             // 모듈 export 시 파일 내 하나의 모듈만 존재할 경우 export default 문을 붙이도록 하는 옵션
             'off', // 나중에 모듈 수정 시 불편할 것 같아 비활성화 처리
