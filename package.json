@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@nuxtjs/robots": "^3.0.0",
-    "@pinia/nuxt": "^0.4.10",
+    "@pinia/nuxt": "^0.4.11",
     "dayjs": "^1.11.8",
     "pinia": "^2.0.36"
   }
