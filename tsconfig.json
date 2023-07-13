@@ -4,7 +4,7 @@
   "compilerOptions": {
       "strict": true,
       "strictNullChecks": false,
-      "typeRoots": ["types"],
+      "typeRoots": ["types", "node_modules/@types"],
       "esModuleInterop": true,
       "allowSyntheticDefaultImports": true,
   },
