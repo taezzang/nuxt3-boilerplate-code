@@ -6,7 +6,7 @@
 ### 기본 세팅
 
 * Vue3.js + TypeScript 세팅
-* ESLint + Prettier (airbnb 컨벤션 적용) 세팅
+* ESLint + Prettier 세팅
 * sitemap, robots.txt 등의 seo 관련 내용 세팅
 * i18n을 통한 다국어 세팅
 * Pinia 상태관리 라이브러리를 통한 상태관리 세팅
