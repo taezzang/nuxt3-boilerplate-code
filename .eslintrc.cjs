@@ -6,12 +6,10 @@ module.exports = {
         browser: true,
         es2021: true,
     },
-    // airbnb의 JS 스타일 가이드를 따른다
     extends: [
         'plugin:@typescript-eslint/recommended',
         'plugin:vue/vue3-essential',
         '@nuxtjs/eslint-config-typescript',
-        'airbnb',
         'prettier',
     ],
     parser: 'vue-eslint-parser',
@@ -49,7 +47,6 @@ module.exports = {
         ],
         'import/extensions': [
             // 일관성 있는 Import Path를 위한 설정
-            // Airbnb lint rule엔 ts가 빠져있어 ts 확장자에 대한 설정까지 추가하여 덮어쓰기
             'error',
             'ignorePackages',
             {
