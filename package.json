@@ -17,7 +17,7 @@
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "nuxt": "^3.6.2",
+    "nuxt": "^3.7.3",
     "nuxt-simple-sitemap": "^3.0.8",
     "prettier": "^2.8.8",
     "sass": "^1.63.6"
