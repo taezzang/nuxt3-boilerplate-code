@@ -9,23 +9,23 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@nuxtjs/i18n": "8.0.0-rc.3",
-    "@pinia-plugin-persistedstate/nuxt": "^1.1.1",
-    "@typescript-eslint/parser": "^6.0.0",
-    "eslint": "^8.43.0",
+    "@pinia-plugin-persistedstate/nuxt": "^1.2.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "eslint": "^8.53.0",
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "nuxt": "^3.6.2",
-    "nuxt-simple-sitemap": "^3.0.8",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "nuxt": "^3.8.1",
+    "nuxt-simple-sitemap": "^3.4.1",
     "prettier": "^3.0.3",
-    "sass": "^1.63.6"
+    "sass": "^1.69.5"
   },
   "dependencies": {
     "@nuxtjs/robots": "^3.0.0",
-    "@pinia/nuxt": "^0.4.11",
-    "dayjs": "^1.11.9",
-    "pinia": "^2.1.4"
+    "@pinia/nuxt": "^0.5.1",
+    "dayjs": "^1.11.10",
+    "pinia": "^2.1.7"
   }
 }
