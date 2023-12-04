@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
-    "@nuxtjs/i18n": "8.0.0-rc.3",
+    "@nuxtjs/i18n": "8.0.0-rc.6",
     "@pinia-plugin-persistedstate/nuxt": "^1.2.0",
     "@typescript-eslint/parser": "^6.10.0",
     "eslint": "^8.53.0",
